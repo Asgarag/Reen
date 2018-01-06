@@ -1,0 +1,36 @@
+.social-links{
+  display: flex;
+}
+
+.social-links__link{
+  padding: 1rem;
+  text-indent: -9999px;
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-links__link_fb{
+  background-image: url("../img/icon-s-facebook.png");
+}
+
+.social-links__link_g{
+  background-image: url("../img/icon-s-gplus.png");
+}
+
+.social-links__link_tw{
+  background-image: url("../img/icon-s-twitter.png");
+}
+
+.social-links__link_pr{
+  background-image: url("../img/icon-s-pinterest.png");
+}
+
+.social-links__link_bh{
+  background-image: url("../img/icon-s-behance.png");
+}
+
+.social-links__link_dr{
+  background-image: url("../img/icon-s-dribbble.png");
+}

@@ -1,0 +1,38 @@
+.header__contacts{
+  background-color: #f5f7fa;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.header-container{
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo{
+  margin-right: 8rem;
+}
+
+.header__menu{
+  flex-grow: 1;
+}
+
+.header__button{
+  background: none;
+  border: none;
+  outline: none;
+  text-indent: -9999px;
+  background-image: url("../img/icon-search.png");
+  background-repeat:no-repeat;
+  margin-right: 2.5rem;
+  margin-left: 22.5rem;
+  cursor: pointer;
+}

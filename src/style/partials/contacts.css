@@ -1,0 +1,23 @@
+.contacts__info{
+  padding-left: 2rem;
+  background-repeat:no-repeat;
+  background-position: left center;
+  color: var(--main-color);
+  font-size: 1.2rem;
+
+  &:hover{
+    color: var(--additional-color);
+  }
+
+  &:not(:last-child){
+    margin-right: 2rem;
+  }
+}
+
+.contacts__info_email{
+  background-image: url("../img/icon-mail.png");
+}
+
+.contacts__info_tel{
+  background-image: url("../img/icon-mobile.png");
+}
