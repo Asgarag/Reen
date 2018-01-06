@@ -1,19 +1,15 @@
 .advantage{
   padding-left: 10rem;
-  background-position: left top;
-  background-repeat: no-repeat;
 }
 
-.advantage_heart{
-  background-image: url("../img/icon-heart.svg");
+.advantage__header{
+  position: relative;
 }
 
-.advantage_lamp{
-  background-image: url("../img/icon-lamp.svg");
-}
-
-.advantage_star{
-  background-image: url("../img/icon-star.svg");
+.advantage__icon{
+  position: absolute;
+  transform: translateX(-100%);
+  left: -3rem;
 }
 
 .advantage__title{

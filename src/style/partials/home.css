@@ -1,6 +1,7 @@
 .home{
   display: flex;
   min-height: 80rem;
+  background-color: var(--main-color);
   background-image: url('../img/image.png');
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,0 +1,39 @@
+.last-works{
+  padding-top: 12rem;
+  padding-bottom: 20rem;
+  background-color: #f2f5f7;
+  margin-bottom: 12rem;
+}
+
+.last-works__header{
+  text-align: center;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7rem;
+}
+
+.last-works__title{
+  font-size: 4.4rem;
+  margin-bottom: 3.5rem;
+}
+
+.last-works__header-text{
+  font-size: 2.2rem;
+}
+
+.last-works__wrapper{
+  display: flex;
+
+  &:not(:last-child){
+    margin-bottom: 8rem;
+  }
+}
+
+.last-works__project:nth-child(2n+1){
+  margin-right: 3rem;
+}
+
+.last-works__img-container:not(:last-child){
+  margin-right: 3rem;
+}
