@@ -1,0 +1,26 @@
+.advantage{
+  padding-left: 10rem;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.advantage_heart{
+  background-image: url("../img/icon-heart.svg");
+}
+
+.advantage_lamp{
+  background-image: url("../img/icon-lamp.svg");
+}
+
+.advantage_star{
+  background-image: url("../img/icon-star.svg");
+}
+
+.advantage__title{
+  font-size: 2.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.advantage__description{
+  font-size: 1.6rem;
+}

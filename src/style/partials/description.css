@@ -1,0 +1,28 @@
+.description{
+  margin-bottom: 13rem;
+}
+
+.description__inner{
+  text-align: center;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7rem;
+}
+
+.description__title{
+  font-size: 4.4rem;
+  margin-bottom: 3.5rem;
+}
+
+.description__text{
+  font-size: 2.2rem;
+}
+
+.description__advantages{
+  display: flex;
+}
+
+.description__advantage:not(:last-child){
+  margin-right: 4rem;
+}

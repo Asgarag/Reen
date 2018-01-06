@@ -1,4 +1,4 @@
-.header__contacts{
+.header__wrapper{
   background-color: #f5f7fa;
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -11,10 +11,11 @@
   align-items: center;
 }
 
-.header__wrapper{
+.header__contacts{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-style: normal;
 }
 
 .header__logo{
@@ -26,13 +27,10 @@
 }
 
 .header__button{
-  background: none;
-  border: none;
-  outline: none;
   text-indent: -9999px;
-  background-image: url("../img/icon-search.png");
+  background-image: url("../img/icon-search.svg");
   background-repeat:no-repeat;
   margin-right: 2.5rem;
   margin-left: 22.5rem;
-  cursor: pointer;
+  background-size: 100%;
 }

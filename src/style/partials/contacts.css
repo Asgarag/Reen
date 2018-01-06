@@ -2,11 +2,12 @@
   padding-left: 2rem;
   background-repeat:no-repeat;
   background-position: left center;
+  background-size: 13px 13px;
   color: var(--main-color);
   font-size: 1.2rem;
 
   &:hover{
-    color: var(--additional-color);
+    color: var(--second-color);
   }
 
   &:not(:last-child){
@@ -15,9 +16,9 @@
 }
 
 .contacts__info_email{
-  background-image: url("../img/icon-mail.png");
+  background-image: url("../img/icon-mail.svg");
 }
 
 .contacts__info_tel{
-  background-image: url("../img/icon-mobile.png");
+  background-image: url("../img/icon-mobile.svg");
 }

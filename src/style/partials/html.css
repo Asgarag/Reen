@@ -1,9 +1,10 @@
 :root{
   --white-color: #fff;
   --black-color: #000000;
-  --gray-color: #bebec0;
-  --additional-color: #0bac93;
+  --gray-color: #73879c;
+  --second-color: #0bac93;
   --main-color: #506a85;
+  --third-color: #a3b1bf;
 }
 
 @custom-media --small screen and (width <= 768px);
