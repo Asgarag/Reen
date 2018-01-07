@@ -23,10 +23,6 @@
   color: var(--gray-color);
 }
 
-.footer__menu{
-  width: 37rem;
-}
-
 .footer__menu-list{
   margin-top: 0;
   margin-bottom: 0;
@@ -40,8 +36,10 @@
 
 .footer__menu-link{
   color: var(--gray-color);
-
-  &:first-child:before{
-    content: "·   ";
-  }
 }
+
+.footer__menu-list-item:not(:last-child)::after{
+    content: "·";
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
