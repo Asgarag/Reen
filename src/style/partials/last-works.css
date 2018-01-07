@@ -31,9 +31,28 @@
 }
 
 .last-works__project:nth-child(2n+1){
-  margin-right: 3rem;
+  margin-right: 4%;
 }
 
 .last-works__img-container:not(:last-child){
-  margin-right: 3rem;
+  margin-right: 4%;
+}
+
+.last-works__img-container{
+  position: relative;
+  width: 22%;
+
+  &::before{
+    content: "";
+    display: block;
+    padding-left: 100%;
+    padding-top: 68%;
+    background-color: var(--second-color);
+  }
+}
+
+.last-works__thumbnail{
+  position: absolute;
+  top: 0;
+  left: 0;
 }

@@ -5,6 +5,8 @@
   --second-color: #0bac93;
   --main-color: #506a85;
   --third-color: #a3b1bf;
+  --forth-color: #2f4052;
+  --fifth-color: #00bc9c;
 }
 
 @custom-media --small screen and (width <= 768px);

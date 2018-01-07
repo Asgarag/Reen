@@ -3,15 +3,10 @@
   background-repeat:no-repeat;
   background-position: left center;
   background-size: 13px 13px;
-  color: var(--main-color);
-  font-size: 1.2rem;
+  font-style: normal;
 
   &:hover{
     color: var(--second-color);
-  }
-
-  &:not(:last-child){
-    margin-right: 2rem;
   }
 }
 
@@ -21,4 +16,8 @@
 
 .contacts__info_tel{
   background-image: url("../img/icon-mobile.svg");
+}
+
+.contacts__info_loc{
+  background-image: url("../img/icon-location.svg");
 }

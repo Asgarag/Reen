@@ -1,10 +1,10 @@
 @import "partials/html.css";
 @import "partials/button.css";
 @import "partials/title.css";
+@import "partials/page.css";
 @import "partials/header.css";
 @import "partials/contacts.css";
 @import "partials/social-links.css";
-@import "partials/menu.css";
 @import "partials/main-container.css";
 @import "partials/home.css";
 @import "partials/description.css";
@@ -12,3 +12,5 @@
 @import "partials/last-works.css";
 @import "partials/project.css";
 @import "partials/preview.css";
+@import "partials/footer.css";
+@import "partials/about.css";

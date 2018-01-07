@@ -15,7 +15,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-style: normal;
+}
+
+.header__contacts-info{
+  font-size: 1.2rem;
+  color: var(--main-color);
+
+  &:not(:last-child){
+    margin-right: 2rem;
+  }
 }
 
 .header__logo{
@@ -33,4 +41,21 @@
   margin-right: 2.5rem;
   margin-left: 22.5rem;
   background-size: 100%;
+}
+
+.header__menu-list{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__menu-link{
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 1.5rem;
 }

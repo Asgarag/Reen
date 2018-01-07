@@ -10,158 +10,242 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__wrapper">
-      <address class="main-container header__contacts">
-        <div class="contacts">
-          <a href="mailto:info@reen.com" class="contacts__info contacts__info_email">info@reen.com</a>
-          <a href="tel:+001234567890" class="contacts__info contacts__info_tel">+00 (123) 456 78 90</a>
+  <div class="page">
+    <div class="page__container">
+      <header class="header">
+        <div class="header__wrapper">
+          <address class="main-container header__contacts">
+            <div class="contacts">
+              <a href="mailto:info@reen.com" class="header__contacts-info contacts__info contacts__info_email">info@reen.com</a>
+              <a href="tel:+001234567890" class="header__contacts-info contacts__info contacts__info_tel">+00 (123) 456 78 90</a>
+            </div>
+            <div class="header__social-links social-links">
+              <a href="#" class="social-links__link social-links__link_fb">Facebook</a>
+              <a href="#" class="social-links__link social-links__link_g">Google+</a>
+              <a href="#" class="social-links__link social-links__link_tw">Twitter</a>
+              <a href="#" class="social-links__link social-links__link_pr">Pinterest</a>
+              <a href="#" class="social-links__link social-links__link_bh">Behance</a>
+              <a href="#" class="social-links__link social-links__link_dr">Dribble</a>
+            </div>
+          </address>
         </div>
-        <div class="header__social-links social-links">
-          <a href="#" class="social-links__link social-links__link_fb">Facebook</a>
-          <a href="#" class="social-links__link social-links__link_g">Google+</a>
-          <a href="#" class="social-links__link social-links__link_tw">Twitter</a>
-          <a href="#" class="social-links__link social-links__link_pr">Pinterest</a>
-          <a href="#" class="social-links__link social-links__link_bh">Behance</a>
-          <a href="#" class="social-links__link social-links__link_dr">Dribble</a>
-        </div>
-      </address>
-    </div>
-    <div class="header-container main-container">
-      <img src="img/logo.svg" alt="Reen" class="header__logo">
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__list-item"><a href="#" class="menu__link">Home</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__link">Portfolio</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__link">Blog</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__link">Pages</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__link">Features</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__link">Mega Menu</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__link">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="header__button button">Поиск</button>
-    </div>
-  </header>
-  <section class="home">
-    <div class="home__inner">
-      <h2 class="home__title title">Made for Designers</h2>
-      <div class="home__text">
-        <p>
-          Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.
-        </p>
-      </div>
-      <button class="home__button button">
-        <span class="home__button-text">Get started now</span>
-      </button>
-    </div>
-  </section>
-  <section class="description main-container">
-    <div class="description__inner">
-      <h2 class="description__title title">Beautiful. Clean. Responsive.</h2>
-      <div class="description__text">
-        <p>
-          REEN is a high-quality solution for those who want a beautiful website in no time. It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter. Your content will always looks its absolute best.
-        </p>
-      </div>
-    </div>
-    <div class="description__advantages">
-      <article class="description__advantage advantage advantage_heart">
-        <header class="advantage__header">
-          <svg class="advantage__icon" xmlns="http://www.w3.org/2000/svg" width="61" height="53" viewBox="0 0 75.237503 66.787498"><g transform="matrix(1.25 0 0 -1.25 0 66.787)"><g><path fill="#0bac93" d="M1.17 30.94c1.26-3.08 3-5.83 5.2-8.26.52-.6.95-1.06 1.3-1.36L28.27.78C28.75.26 29.38 0 30.1 0c.7 0 1.34.26 1.94.78l20.48 20.48.26.13c.1.12.23.3.42.54.2.24.43.5.7.75.9.98 1.78 2.13 2.65 3.43 2.43 3.68 3.64 7.28 3.64 10.8 0 3.02-.5 5.6-1.44 7.73-2.7 5.85-7.63 8.77-14.82 8.77-1.52 0-2.92-.24-4.22-.71-3.3-1.18-6.5-3.32-9.62-6.44-2.2 2.17-4.12 3.73-5.72 4.68-2.78 1.65-5.46 2.47-8.06 2.47-5.16 0-9.17-1.45-12.03-4.36C1.42 46.17 0 42.12 0 36.92c0-2.04.4-4.03 1.17-5.98M16.3 48.1c1.14 0 2.3-.28 3.52-.85 3.25-1.5 6-3.7 8.26-6.56.52-.7 1.2-1.05 2.02-1.05.82 0 1.5.35 2.07 1.04 1.26 1.55 2.84 3.04 4.75 4.47 2.6 1.95 4.94 2.93 7.02 2.93 7.28 0 10.92-3.73 10.92-11.18 0-1.43-.3-2.88-.9-4.36-1.14-2.64-2.52-4.78-4.17-6.43l-9.82-9.82-9.88-9.87-9.1 9.1-10.6 10.6c-.6.65-1.3 1.54-2.08 2.66-2 2.9-3 5.6-3 8.12 0 7.45 3.67 11.18 11 11.18"/></g></g></g></g></svg>
-          <h3 class="advantage__title title">Passion</h3>
-        </header>
-        <div class="advantage__description">
-          <p>
-            Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
-          </p>
-        </div>
-      </article>
-      <article class="description__advantage advantage advantage_lamp">
-        <header class="advantage__header">
-          <svg class="advantage__icon" xmlns="http://www.w3.org/2000/svg" width="46" height="65" viewBox="0 0 56.841125 90.257378"><g transform="matrix(1.25 0 0 -1.25 0 81.257)"><g><path fill="#0bac93" d="M13.58 2.6C16.62.84 19.65-.03 22.68 0c3.12-.08 6.2.8 9.23 2.6v6.77H13.6V2.6zm17.94 10.67c0 2.6.52 5.07 1.56 7.4.48 1.1 1.08 2.2 1.8 3.35.7 1.15 1.3 2.07 1.8 2.77.5.68 1.26 1.65 2.25 2.9L41 32.45c3.26 4.38 4.74 8.9 4.43 13.6-.47 5.27-2.53 9.74-6.17 13.38-3.73 3.72-9.25 5.6-16.58 5.6-7.28 0-12.78-1.88-16.5-5.6C2.4 55.65.37 51.18.05 46.02c-.26-3.03.27-6 1.6-8.9 1.32-2.9 2.95-5.37 4.9-7.4 1.95-2.13 3.68-4.66 5.17-7.58 1.5-2.93 2.24-5.88 2.24-8.87h17.55zm-8.84 44.98c9.88 0 15.17-4.25 15.86-12.74.1-1.12-.06-2.5-.45-4.1-.18-.68-.9-2.03-2.16-4.02-.04-.1-.32-.5-.84-1.23l-1.56-2.2c-.52-.75-.8-1.14-.85-1.18-3.82-5.12-6.25-9.7-7.3-13.78H20.1c-1.04 3.97-3.46 8.57-7.28 13.77-.08.08-.43.56-1.04 1.43-.6.86-.93 1.34-.97 1.43-.05.08-.35.5-.9 1.23-.53.74-.82 1.15-.87 1.24l-.26.4c-.13.25-.27.5-.42.77-.15.26-.28.52-.4.78-.1.26-.15.4-.15.45 0 .04-.13.43-.4 1.17-.25.74-.36 1.15-.32 1.24.05.05 0 .47-.13 1.27s-.13 1.25 0 1.34c.7 8.5 5.94 12.75 15.73 12.75"/></g></g></g></g></svg>
-          <h3 class="advantage__title title">Creativity</h3>
-        </header>
-        <div class="advantage__description">
-          <p>
-            Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
-          </p>
-        </div>
-      </article>
-      <article class="description__advantage advantage advantage_star">
-        <header class="advantage__header">
-          <svg class="advantage__icon" xmlns="http://www.w3.org/2000/svg" width="56" height="53" viewBox="0 0 69.956253 66.787498"><g transform="matrix(1.25 0 0 -1.25 0 66.787)"><g><path fill="#0bac93" d="M11.57 0c.43 0 .87.15 1.3.46l15.08 7.92L43.1.46c.43-.3.88-.45 1.36-.45.9 0 1.36.56 1.36 1.7 0 .08 0 .2-.03.35-.03.15-.04.25-.04.3L42.9 19.16l12.3 11.9c.5.56.76 1.13.76 1.7 0 .64-.6 1.14-1.8 1.48l-16.9 2.47-7.62 15.34c-.48.9-1.04 1.37-1.7 1.37-.68 0-1.22-.46-1.6-1.36L18.7 36.72l-16.9-2.47C.62 33.9 0 33.4 0 32.76c0-.52.28-1.08.85-1.7L13.06 19.2 10.2 2.34c0-.1 0-.2-.03-.36-.02-.15-.03-.25-.03-.3 0-1.12.48-1.68 1.43-1.68M22.3 31.85l5.65 11.5 5.72-11.5 12.67-1.82-9.16-8.97 2.14-12.6-11.37 5.9-11.3-5.9 2.14 12.6-9.18 8.97 12.68 1.82z"/></g></g></g></g></svg>
-          <h3 class="advantage__title title">Quality</h3>
-        </header>
-        <div class="advantage__description">
-          <p>
-            Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
-          </p>
-        </div>
-      </article>
-    </div>
-  </section>
-  <section class="last-works">
-    <div class="main-container">
-      <header class="last-works__header">
-        <h2 class="last-works__title title">Check out our latest works</h2>
-        <div class="last-works__header-text">
-          <p>
-            Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
-          </p>
+        <div class="header-container main-container">
+          <img src="img/logo.svg" alt="Reen" class="header__logo">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-list-item"><a href="#" class="header__menu-link">Home</a></li>
+              <li class="header__menu-list-item"><a href="#" class="header__menu-link">Portfolio</a></li>
+              <li class="header__menu-list-item"><a href="#" class="header__menu-link">Blog</a></li>
+              <li class="header__menu-list-item"><a href="#" class="header__menu-link">Pages</a></li>
+              <li class="header__menu-list-item"><a href="#" class="header__menu-link">Features</a></li>
+              <li class="header__menu-list-item"><a href="#" class="header__menu-link">Mega Menu</a></li>
+              <li class="header__menu-list-item"><a href="#" class="header__menu-link">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="header__button button">Поиск</button>
         </div>
       </header>
-      <div class="last-works__content">
-        <div class="last-works__wrapper">
-          <figure class="last-works__project project">
-            <div class="project__container">
-              <img src="img/project1.png" alt="Grand Motel" class="project__img">
-              </div>
-            <figcaption class="project__figcaption">
-              <h3 class="project__name title">Grand Motel gets an identity brushup</h3>
-              <span class="project__text">Identity</span>
-            </figcaption>
-          </figure>
-          <figure class="last-works__project project">
-            <div class="project__container">
-              <img src="img/project2.png" alt="Fresh branding for a creative startup" class="project__img">
+      <section class="home">
+        <div class="home__inner">
+          <h2 class="home__title title">Made for Designers</h2>
+          <div class="home__text">
+            <p>
+              Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.
+            </p>
+          </div>
+          <button class="home__button button">
+        <span class="home__button-text">Get started now</span>
+      </button>
+        </div>
+      </section>
+      <section class="description main-container">
+        <div class="description__inner">
+          <h2 class="description__title title">Beautiful. Clean. Responsive.</h2>
+          <div class="description__text">
+            <p>
+              REEN is a high-quality solution for those who want a beautiful website in no time. It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter. Your content will always looks its absolute best.
+            </p>
+          </div>
+        </div>
+        <div class="description__advantages">
+          <article class="description__advantage advantage advantage_heart">
+            <header class="advantage__header">
+              <svg class="advantage__icon" xmlns="http://www.w3.org/2000/svg" width="61" height="53" viewBox="0 0 75.237503 66.787498"><g transform="matrix(1.25 0 0 -1.25 0 66.787)"><g><path fill="#0bac93" d="M1.17 30.94c1.26-3.08 3-5.83 5.2-8.26.52-.6.95-1.06 1.3-1.36L28.27.78C28.75.26 29.38 0 30.1 0c.7 0 1.34.26 1.94.78l20.48 20.48.26.13c.1.12.23.3.42.54.2.24.43.5.7.75.9.98 1.78 2.13 2.65 3.43 2.43 3.68 3.64 7.28 3.64 10.8 0 3.02-.5 5.6-1.44 7.73-2.7 5.85-7.63 8.77-14.82 8.77-1.52 0-2.92-.24-4.22-.71-3.3-1.18-6.5-3.32-9.62-6.44-2.2 2.17-4.12 3.73-5.72 4.68-2.78 1.65-5.46 2.47-8.06 2.47-5.16 0-9.17-1.45-12.03-4.36C1.42 46.17 0 42.12 0 36.92c0-2.04.4-4.03 1.17-5.98M16.3 48.1c1.14 0 2.3-.28 3.52-.85 3.25-1.5 6-3.7 8.26-6.56.52-.7 1.2-1.05 2.02-1.05.82 0 1.5.35 2.07 1.04 1.26 1.55 2.84 3.04 4.75 4.47 2.6 1.95 4.94 2.93 7.02 2.93 7.28 0 10.92-3.73 10.92-11.18 0-1.43-.3-2.88-.9-4.36-1.14-2.64-2.52-4.78-4.17-6.43l-9.82-9.82-9.88-9.87-9.1 9.1-10.6 10.6c-.6.65-1.3 1.54-2.08 2.66-2 2.9-3 5.6-3 8.12 0 7.45 3.67 11.18 11 11.18"/></g></g></g></g></svg>
+              <h3 class="advantage__title title">Passion</h3>
+            </header>
+            <div class="advantage__description">
+              <p>
+                Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
+              </p>
             </div>
-            <figcaption class="project__figcaption">
-              <h3 class="project__name title">Fresh branding for a creative startup</h3>
-              <span class="project__text">Identity</span>
-            </figcaption>
-          </figure>
+          </article>
+          <article class="description__advantage advantage advantage_lamp">
+            <header class="advantage__header">
+              <svg class="advantage__icon" xmlns="http://www.w3.org/2000/svg" width="46" height="65" viewBox="0 0 56.841125 90.257378"><g transform="matrix(1.25 0 0 -1.25 0 81.257)"><g><path fill="#0bac93" d="M13.58 2.6C16.62.84 19.65-.03 22.68 0c3.12-.08 6.2.8 9.23 2.6v6.77H13.6V2.6zm17.94 10.67c0 2.6.52 5.07 1.56 7.4.48 1.1 1.08 2.2 1.8 3.35.7 1.15 1.3 2.07 1.8 2.77.5.68 1.26 1.65 2.25 2.9L41 32.45c3.26 4.38 4.74 8.9 4.43 13.6-.47 5.27-2.53 9.74-6.17 13.38-3.73 3.72-9.25 5.6-16.58 5.6-7.28 0-12.78-1.88-16.5-5.6C2.4 55.65.37 51.18.05 46.02c-.26-3.03.27-6 1.6-8.9 1.32-2.9 2.95-5.37 4.9-7.4 1.95-2.13 3.68-4.66 5.17-7.58 1.5-2.93 2.24-5.88 2.24-8.87h17.55zm-8.84 44.98c9.88 0 15.17-4.25 15.86-12.74.1-1.12-.06-2.5-.45-4.1-.18-.68-.9-2.03-2.16-4.02-.04-.1-.32-.5-.84-1.23l-1.56-2.2c-.52-.75-.8-1.14-.85-1.18-3.82-5.12-6.25-9.7-7.3-13.78H20.1c-1.04 3.97-3.46 8.57-7.28 13.77-.08.08-.43.56-1.04 1.43-.6.86-.93 1.34-.97 1.43-.05.08-.35.5-.9 1.23-.53.74-.82 1.15-.87 1.24l-.26.4c-.13.25-.27.5-.42.77-.15.26-.28.52-.4.78-.1.26-.15.4-.15.45 0 .04-.13.43-.4 1.17-.25.74-.36 1.15-.32 1.24.05.05 0 .47-.13 1.27s-.13 1.25 0 1.34c.7 8.5 5.94 12.75 15.73 12.75"/></g></g></g></g></svg>
+              <h3 class="advantage__title title">Creativity</h3>
+            </header>
+            <div class="advantage__description">
+              <p>
+                Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
+              </p>
+            </div>
+          </article>
+          <article class="description__advantage advantage advantage_star">
+            <header class="advantage__header">
+              <svg class="advantage__icon" xmlns="http://www.w3.org/2000/svg" width="56" height="53" viewBox="0 0 69.956253 66.787498"><g transform="matrix(1.25 0 0 -1.25 0 66.787)"><g><path fill="#0bac93" d="M11.57 0c.43 0 .87.15 1.3.46l15.08 7.92L43.1.46c.43-.3.88-.45 1.36-.45.9 0 1.36.56 1.36 1.7 0 .08 0 .2-.03.35-.03.15-.04.25-.04.3L42.9 19.16l12.3 11.9c.5.56.76 1.13.76 1.7 0 .64-.6 1.14-1.8 1.48l-16.9 2.47-7.62 15.34c-.48.9-1.04 1.37-1.7 1.37-.68 0-1.22-.46-1.6-1.36L18.7 36.72l-16.9-2.47C.62 33.9 0 33.4 0 32.76c0-.52.28-1.08.85-1.7L13.06 19.2 10.2 2.34c0-.1 0-.2-.03-.36-.02-.15-.03-.25-.03-.3 0-1.12.48-1.68 1.43-1.68M22.3 31.85l5.65 11.5 5.72-11.5 12.67-1.82-9.16-8.97 2.14-12.6-11.37 5.9-11.3-5.9 2.14 12.6-9.18 8.97 12.68 1.82z"/></g></g></g></g></svg>
+              <h3 class="advantage__title title">Quality</h3>
+            </header>
+            <div class="advantage__description">
+              <p>
+                Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.
+              </p>
+            </div>
+          </article>
         </div>
-        <div class="last-works__wrapper">
-          <div class="last-works__img-container">
-            <img src="img/mini1.png" alt="Black note" class="last-works__mini-picture">
-          </div>
-          <div class="last-works__img-container">
-            <img src="img/mini2.png" alt="Vinil" class="last-works__mini-picture">
-          </div>
-          <div class="last-works__img-container">
-            <img src="img/mini3.png" alt="Astor & Yancy" class="last-works__mini-picture">
-          </div>
-          <div class="last-works__img-container">
-            <img src="img/mini4.png" alt="Signwall" class="last-works__mini-picture">
+      </section>
+      <section class="last-works">
+        <div class="main-container">
+          <header class="last-works__header">
+            <h2 class="last-works__title title">Check out our latest works</h2>
+            <div class="last-works__header-text">
+              <p>
+                Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
+              </p>
+            </div>
+          </header>
+          <div class="last-works__content">
+            <div class="last-works__wrapper">
+              <figure class="last-works__project project">
+                <img src="img/project1.png" alt="Grand Motel" class="project__img">
+                <figcaption class="project__figcaption">
+                  <h3 class="project__name title">Grand Motel gets an identity brushup</h3>
+                  <span class="project__text">Identity</span>
+                </figcaption>
+              </figure>
+              <figure class="last-works__project project">
+                <img src="img/project2.png" alt="Fresh branding for a creative startup" class="project__img">
+                <figcaption class="project__figcaption">
+                  <h3 class="project__name title">Fresh branding for a creative startup</h3>
+                  <span class="project__text">Identity</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="last-works__wrapper">
+              <div class="last-works__img-container">
+                <img src="img/mini1.png" alt="Black note" class="last-works__thumbnail">
+              </div>
+              <div class="last-works__img-container">
+                <img src="img/mini2.png" alt="Vinil" class="last-works__thumbnail">
+              </div>
+              <div class="last-works__img-container">
+                <img src="img/mini3.png" alt="Astor & Yancy" class="last-works__thumbnail">
+              </div>
+              <div class="last-works__img-container">
+                <img src="img/mini4.png" alt="Signwall" class="last-works__thumbnail">
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="preview">
-    <div class="preview__inner">
-      <h2 class="preview__title title">Want to work with us?</h2>
-      <div class="preview__text">
-        <p>
-          Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
-        </p>
-      </div>
-      <button class="preview__button button">
+      </section>
+      <section class="preview">
+        <div class="preview__inner">
+          <h2 class="preview__title title">Want to work with us?</h2>
+          <div class="preview__text">
+            <p>
+              Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
+            </p>
+          </div>
+          <button class="preview__button button">
         <span class="preview__button-text">Get in touch</span>
       </button>
+        </div>
+      </section>
     </div>
-  </section>
+    <footer class="footer">
+      <div class="footer__about about main-container">
+        <div class="about__column">
+          <h3 class="about__title title">Who we are</h3>
+          <div class="about__content">
+            <img src="img/footer-logo.png" alt="Reen" class="about__logo">
+            <div class="about__text">
+              <p>
+                Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.
+              </p>
+            </div>
+            <a href="#" class="about__link">
+              <span>More about us</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 52.938751 47.287498"><g transform="matrix(1.25 0 0 -1.25 0 47.288)"><g><path fill="#a3b1bf" d="M24.1 37.83c-1.1 0-2-.35-2.68-1.04-1.56-1.57-1.56-3.3 0-5.2l12.1-12.75-12.1-12.6c-1.56-1.92-1.56-3.65 0-5.2.7-.7 1.56-1.05 2.6-1.05s1.9.35 2.6 1.04l14.7 15.34c.68.7 1.03 1.52 1.03 2.47 0 1.04-.35 1.9-1.04 2.6L26.63 36.8c-.56.68-1.4 1.03-2.53 1.03"/></g><g><path fill="#a3b1bf" d="M3.54 22.46h27.9c1.95 0 3.54-1.6 3.54-3.54 0-1.96-1.6-3.55-3.54-3.55H3.54C1.6 15.37 0 16.97 0 18.92c0 1.95 1.6 3.54 3.54 3.54"/></g></g></g></g></svg>
+            </a>
+          </div>
+        </div>
+        <div class="about__column">
+          <h3 class="about__title title">Latest works</h3>
+          <div class="about__content">
+            <div class="about__grid">
+              <div class="about__group">
+                <img src="img/footer-mini1.png" alt="Grand Motel" class="about__img">
+              </div>
+              <div class="about__group">
+                <img src="img/footer-mini2.png" alt="IMac" class="about__img">
+              </div>
+              <div class="about__group">
+                <img src="img/footer-mini3.png" alt="Vinil" class="about__img">
+              </div>
+              <div class="about__group">
+                <img src="img/footer-mini4.png" alt="Phone" class="about__img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__column">
+          <h3 class="about__title title">Get in touch</h3>
+          <div class="about__content">
+            <div class="about__text">
+              <p>
+                Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.
+              </p>
+            </div>
+            <address class="contacts">
+              <a href="#" class="about__contacts-info contacts__info contacts__info_loc">84 Street, City, State 24813</a>
+              <a href="tel:+001234567890" class="about__contacts-info contacts__info contacts__info_tel">+00 (123) 456 78 90</a>
+              <a href="mailto:info@reen.com" class="about__contacts-info contacts__info contacts__info_email">info@reen.com</a>
+            </address>
+          </div>
+        </div>
+        <div class="about__column">
+          <h3 class="about__title title">Free updates</h3>
+          <div class="about__content">
+            <div class="about__text">
+              <p>
+                Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.
+              </p>
+            </div>
+            <form method="post" class="about__form">
+              <label class="about__label">
+                <input type="email" class="about__input" placeholder="Enter your email address">
+                <button class="about__button button">Subscribe</button>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__wrapper">
+        <div class="main-container footer__row">
+          <span class="footer__copyright">© 2014 REEN. All rights reserved.</span>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-list-item"><a href="#" class="footer__menu-link">Home</a></li>
+              <li class="footer__menu-list-item"><a href="#" class="footer__menu-link">Portfolio</a></li>
+              <li class="footer__menu-list-item"><a href="#" class="footer__menu-link">Blog</a></li>
+              <li class="footer__menu-list-item"><a href="#" class="footer__menu-link">About</a></li>
+              <li class="footer__menu-list-item"><a href="#" class="footer__menu-link">Services</a></li>
+              <li class="footer__menu-list-item"><a href="#" class="footer__menu-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
