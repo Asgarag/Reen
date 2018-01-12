@@ -1,12 +1,26 @@
-.about{
-  display: flex;
+@media screen and (width >= 768px) {
+
+  .about{
+    display: flex;
+  }
+
+  .about__column{
+    width: 22%;
+
+    &:not(:last-child){
+      margin-right: 4%;
+    }
+  }
 }
 
-.about__column{
-  width: 22%;
+@media screen and (width <= 768px) {
 
-  &:not(:last-child){
-    margin-right: 4%;
+  .about__last-works{
+    display: none;
+  }
+
+  .about__column:not(:last-child){
+    margin-bottom: 4rem;
   }
 }
 

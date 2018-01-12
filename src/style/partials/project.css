@@ -1,7 +1,6 @@
 .project{
   margin: 0;
   background-color: var(--white-color);
-  width: 48%;
   position: relative;
 
   &::before{
@@ -21,7 +20,6 @@
 
 .project__figcaption{
   margin-top: 3rem;
-  margin-bottom: 3rem;
   text-align: center;
 }
 

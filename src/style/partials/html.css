@@ -13,10 +13,24 @@
 @custom-media --medium screen and (width <= 1024px) and (width > 768px);
 @custom-media --big screen and (width > 1024px);
 
+
+@media screen and (width > 1024px) {
   html{
     font-size: 62.5%;
   }
+}
 
+@media screen and (width <= 1024px) and (width > 768px) {
+  html{
+    font-size: 58%;
+  }
+}
+
+@media screen and (width <= 768px) {
+  html{
+    font-size: 54%;
+  }
+}
 
 a{
   text-decoration: none;
