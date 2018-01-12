@@ -1,14 +1,27 @@
 .preview{
   margin-bottom: 12rem;
   position: relative;
+  overflow: hidden;
+  background-color: var(--main-color);
+}
+
+@keyframes fade {
+
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .preview__slide{
-  background-color: var(--main-color);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  animation: fade 1.5s;
+  display: none;
 
   &:nth-child(1){
     background-image: url('../img/preview1.png');
@@ -32,6 +45,10 @@
   }
 }
 
+.preview__slide_active{
+  display: block;
+}
+
 .preview__inner{
   position: relative;
   min-height: 88rem;
@@ -53,7 +70,7 @@
 }
 
 .preview__container_2{
-  right: 0;
+  right: 1.5rem;
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
@@ -63,7 +80,7 @@
 }
 
 .preview__container_3{
-  left: 0;
+  left: 1.5rem;
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
@@ -75,7 +92,7 @@
 .preview__container_4{
   text-align: right;
   top: 9rem;
-  right: 0;
+  right: 1.5rem;
   max-width: 76rem;
   color: var(--white-color);
 }
@@ -124,16 +141,54 @@
   border-radius: .3rem;
 }
 
-.preview__switch-prev{
+.preview__switch-prev, .preview__switch-next{
   position: absolute;
   top: 50%;
-  left: 5rem;
   transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+  padding: 1rem 1.9rem;
+  background-color: #7b95b0;
+  border-radius: 5%;
+}
+
+.preview:hover .preview__switch-prev, .preview:hover .preview__switch-next, .preview:hover .preview__dots{
+  display: block;
+}
+
+.preview__switch-prev{
+  left: 1.5rem;
 }
 
 .preview__switch-next{
+  right: 1.5rem;
+}
+
+.preview__dots{
   position: absolute;
-  top: 50%;
-  right: 5rem;
-  transform: translateY(-50%);
+  bottom: -.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white-color);
+  padding: 1rem 1.5rem 0;
+  border-radius: 5%;
+  display: none;
+}
+
+.preview__dot{
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--main-color);
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  text-indent: -9999px;
+
+  &:not(:last-child){
+    margin-right: .7rem;
+  }
+}
+
+.preview__dot_active{
+  background-color: var(--fifth-color);
 }
