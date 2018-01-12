@@ -5,18 +5,27 @@
   var slides = document.getElementsByClassName('preview__slide');
   var slideIndex = 1;
   showSlides(slideIndex);
-  /*var timerId = setInterval(function() {
+  var timerId = setInterval(function() {
       showSlides(slideIndex += 1);
-    }, 3000);*/
+    }, 3000);
+
   prev[0].addEventListener("click", function(){
     showSlides(slideIndex += -1);
+    clearInterval(timerId);
+    timerId = setInterval(function() {
+        showSlides(slideIndex += 1);
+      }, 3000);
   });
 
   next[0].addEventListener("click", function(){
     showSlides(slideIndex += 1);
+    clearInterval(timerId);
+    timerId = setInterval(function() {
+        showSlides(slideIndex += 1);
+      }, 3000);
   });
 
-/*  dots[0].addEventListener("click", function(){
+  dots[0].addEventListener("click", function(){
     showSlides(slideIndex = 1);
     clearInterval(timerId);
     timerId = setInterval(function() {
@@ -55,7 +64,7 @@
         showSlides(slideIndex += 1);
       }, 3000);
   });
-*/
+
   function showSlides(n) {
     if (n > slides.length) {
       slideIndex = 1;
