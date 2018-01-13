@@ -1,4 +1,4 @@
-@media screen and (width > 1170px) {
+@media screen and (width >= 1170px) {
   .main-container{
     max-width: 1170px;
     margin-left: auto;

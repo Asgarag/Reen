@@ -36,14 +36,6 @@ var path = {
     clean: './build'
 };
 
-var config = {
-    server: {
-        baseDir: "./build"
-    },
-    host: 'localhost',
-    port: 9000
-};
-
 gulp.task('html:build', function () {
     gulp.src(path.src.html)
         .pipe(rigger())
@@ -100,7 +92,12 @@ gulp.task('watch', function(){
 });
 
 gulp.task('webserver', function () {
-    browserSync(config);
+    browserSync({server: {
+        baseDir: "./build"
+    },
+    port: 8080,
+    open: true,
+    notify: false});
 });
 
 gulp.task('clean', function (cb) {

@@ -1,7 +1,86 @@
+@media screen and (width >= 768px) {
+
+  .preview__title{
+    font-size: 7.8rem;
+  }
+
+  .preview__title-text{
+    padding: 3rem 4rem;
+    font-size: 7.3rem;
+  }
+
+  .preview__inner{
+    min-height: 88rem;
+  }
+
+  .preview__text{
+    font-size: 2.4rem;
+    margin-bottom: 6.5rem;
+  }
+
+  .preview__switch-prev, .preview__switch-next{
+    top: 50%;
+  }
+
+  .preview__button{
+    padding: 2.5rem 6rem;
+  }
+
+}
+
+@media screen and (width < 768px){
+
+  .preview__switch-prev, .preview__switch-next{
+    bottom: 0;
+  }
+
+  .preview__title-text{
+    padding: 1.5rem 2rem;
+  }
+
+  .preview__button{
+    padding: 1.5rem 4rem;
+  }
+
+  .preview__text{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (width < 768px) and (width >= 480px){
+
+  .preview__title{
+    font-size: 5rem;
+  }
+
+  .preview__title-text{
+    font-size: 5rem;
+  }
+
+  .preview__inner{
+    min-height: 70rem;
+  }
+}
+
+@media screen and (width < 480px) {
+
+  .preview__title{
+    font-size: 4rem;
+  }
+
+  .preview__title-text{
+    font-size: 3.5rem;
+  }
+
+  .preview__inner{
+    min-height: 100vh;
+  }
+}
+
 .preview{
   margin-bottom: 12rem;
   position: relative;
-  overflow: hidden;
   background-color: var(--main-color);
 }
 
@@ -33,7 +112,6 @@
 
   &:nth-child(3){
     background-image: url('../img/preview3.png');
-    color: var(--main-color);
   }
 
   &:nth-child(4){
@@ -51,7 +129,6 @@
 
 .preview__inner{
   position: relative;
-  min-height: 88rem;
 }
 
 .preview__container{
@@ -62,7 +139,6 @@
 .preview__container_1{
   left: 50%;
   top: 50%;
-  width: 100%;
   transform: translate(-50%, -50%);
   max-width: 97rem;
   text-align: center;
@@ -72,7 +148,6 @@
 .preview__container_2{
   right: 1.5rem;
   top: 50%;
-  width: 100%;
   transform: translateY(-50%);
   max-width: 78rem;
   text-align: right;
@@ -82,7 +157,6 @@
 .preview__container_3{
   left: 1.5rem;
   top: 50%;
-  width: 100%;
   transform: translateY(-50%);
   text-align: left;
   max-width: 70rem;
@@ -100,7 +174,6 @@
 .preview__container_5{
   text-align: center;
   top: 9rem;
-  width: 100%;
   left: 50%;
   transform: translateX(-50%);
   color: var(--third-color);
@@ -108,7 +181,6 @@
 }
 
 .preview__title{
-  font-size: 7.8rem;
   font-weight: 900;
   color: var(--white-color);
   margin-bottom: 2.5rem;
@@ -118,17 +190,10 @@
 .preview__title-text{
   display: inline-block;
   background-color: var(--main-color);
-  padding: 3rem 4rem;
-  font-size: 7.3rem;
 
   &:not(:last-child){
     margin-bottom: 1rem;
   }
-}
-
-.preview__text{
-  font-size: 2.4rem;
-  margin-bottom: 6.5rem;
 }
 
 .preview__button{
@@ -143,7 +208,6 @@
 
 .preview__switch-prev, .preview__switch-next{
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   display: none;

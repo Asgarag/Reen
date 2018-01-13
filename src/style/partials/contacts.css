@@ -1,3 +1,14 @@
+@media screen and (width < 480px){
+
+  .contacts__info{
+    display: block;
+
+    &:not(:last-child){
+      margin-bottom: .5rem;
+    }
+  }
+}
+
 .contacts__info{
   padding-left: 2rem;
   background-repeat:no-repeat;

@@ -27,6 +27,22 @@
         <li class="header__menu-list-item"><a href="#" class="header__menu-link">Contact</a></li>
       </ul>
     </nav>
-    <button class="header__button button">Поиск</button>
+    <div class="header__switches">
+      <button class="header__search-button button">Поиск</button>
+      <button class="header__search-button-cross button">
+        <span class="header__button-cross"></span>
+      </button>
+      <button class="header__menu-button button">
+        <span class="header__menu-button-row"></span>
+        <span class="header__menu-button-row"></span>
+        <span class="header__menu-button-row"></span>
+      </button>
+    </div>
+    <form method="post" class="header__form">
+      <label class="header__label">
+        <input type="search" class="header__input" placeholder="Enter keyword">
+        <button class="header__form-button button">Search</button>
+      </label>
+    </form>
   </div>
 </header>

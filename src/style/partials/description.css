@@ -1,5 +1,5 @@
 @media screen and (width >= 768px){
-  
+
   .description__advantages{
     display: flex;
   }
@@ -9,7 +9,7 @@
   }
 }
 
-@media screen and (width <= 768px){
+@media screen and (width < 768px){
 
   .description__advantage:not(:last-child){
     margin-bottom: 4rem;

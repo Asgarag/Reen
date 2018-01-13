@@ -1,4 +1,24 @@
+@media screen and (width >= 1024px){
 
+  .header__logo{
+    margin-right: 8rem;
+  }
+
+  .header__switches{
+    margin-left: 22.5rem;
+  }
+
+  .header__menu-button{
+    display: none;
+  }
+}
+
+@media screen and (width < 1024px){
+
+  .header__menu{
+    display: none;
+  }
+}
 
 .header__wrapper{
   background-color: #f5f7fa;
@@ -11,6 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__contacts{
@@ -28,21 +49,42 @@
   }
 }
 
-.header__logo{
-  margin-right: 8rem;
-}
-
 .header__menu{
   flex-grow: 1;
 }
 
-.header__button{
+.header__switches{
+  display: flex;
+}
+
+.header__search-button{
   text-indent: -9999px;
   background-image: url("../img/icon-search.svg");
   background-repeat:no-repeat;
+  width: 18px;
+  height: 18px;
   margin-right: 2.5rem;
-  margin-left: 22.5rem;
-  background-size: 100%;
+  padding: 0;
+}
+
+.header__search-button_disable{
+  display: none;
+}
+
+.header__menu-button{
+  padding: 0;
+}
+
+.header__menu-button-row{
+  display: block;
+  width: 18px;
+  height: 3px;
+  background-color: var(--main-color);
+  border-radius: 20%;
+
+  &:not(:last-child){
+    margin-bottom: 3px;
+  }
 }
 
 .header__menu-list{
@@ -60,4 +102,78 @@
   color: var(--main-color);
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.header__form{
+  width: 100%;
+  margin-top: 2rem;
+  display: none;
+}
+
+.header__form_active{
+  display: block;
+}
+
+.header__label{
+  position: relative;
+}
+
+.header__input{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.header__form-button{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-indent: -9999px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat:no-repeat;
+  background-size: 100%;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+}
+
+.header__search-button-cross{
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  margin-right: 2.5rem;
+  display: none;
+}
+
+.header__search-button-cross_active{
+  display: block;
+}
+
+.header__button-cross{
+  position: absolute;
+  height: 18px;
+  top: 0;
+  left: 0;
+
+  &:before, &:after{
+    position: absolute;
+    left: 8px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: var(--main-color);
+  }
+
+  &:before{
+  transform: rotate(45deg);
+  }
+
+  &:after{
+  transform: rotate(-45deg);
+  }
 }

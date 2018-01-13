@@ -7,14 +7,14 @@
   showSlides(slideIndex);
   var timerId = setInterval(function() {
       showSlides(slideIndex += 1);
-    }, 3000);
+    }, 5000);
 
   prev[0].addEventListener("click", function(){
     showSlides(slideIndex += -1);
     clearInterval(timerId);
     timerId = setInterval(function() {
         showSlides(slideIndex += 1);
-      }, 3000);
+      }, 5000);
   });
 
   next[0].addEventListener("click", function(){
@@ -22,7 +22,7 @@
     clearInterval(timerId);
     timerId = setInterval(function() {
         showSlides(slideIndex += 1);
-      }, 3000);
+      }, 5000);
   });
 
   dots[0].addEventListener("click", function(){
@@ -30,7 +30,7 @@
     clearInterval(timerId);
     timerId = setInterval(function() {
         showSlides(slideIndex += 1);
-      }, 3000);
+      }, 5000);
   });
 
   dots[1].addEventListener("click", function(){
@@ -38,7 +38,7 @@
     clearInterval(timerId);
     timerId = setInterval(function() {
         showSlides(slideIndex += 1);
-      }, 3000);
+      }, 5000);
   });
 
   dots[2].addEventListener("click", function(){
@@ -46,7 +46,7 @@
     clearInterval(timerId);
     timerId = setInterval(function() {
         showSlides(slideIndex += 1);
-      }, 3000);
+      }, 5000);
   });
 
   dots[3].addEventListener("click", function(){
@@ -54,7 +54,7 @@
     clearInterval(timerId);
     timerId = setInterval(function() {
         showSlides(slideIndex += 1);
-      }, 3000);
+      }, 5000);
   });
 
   dots[4].addEventListener("click", function(){
@@ -62,7 +62,7 @@
     clearInterval(timerId);
     timerId = setInterval(function() {
         showSlides(slideIndex += 1);
-      }, 3000);
+      }, 5000);
   });
 
   function showSlides(n) {

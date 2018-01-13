@@ -31,7 +31,7 @@
 }
 
 
-@media screen and (width <= 480px){
+@media screen and (width < 480px){
 
   .last-works__project{
     width: 100%;

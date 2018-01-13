@@ -11,7 +11,7 @@
   }
 }
 
-@media screen and (width <= 768px) {
+@media screen and (width < 768px) {
 
   .footer__menu{
     display: none;

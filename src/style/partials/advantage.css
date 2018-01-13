@@ -5,7 +5,7 @@
   }
 }
 
-@media screen and (width <= 768px){
+@media screen and (width < 768px){
 
   .advantage__title{
     margin-bottom: 1rem;
