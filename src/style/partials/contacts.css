@@ -10,25 +10,20 @@
 }
 
 .contacts__info{
-  padding-left: 2rem;
-  background-repeat:no-repeat;
-  background-position: left center;
-  background-size: 13px 13px;
   font-style: normal;
+  display: flex;
+  align-items: center;
 
   &:hover{
     color: var(--second-color);
   }
+
+  &:hover .contacts__icon{
+    fill: var(--second-color);
+  }
 }
 
-.contacts__info_email{
-  background-image: url("../img/icon-mail.svg");
-}
-
-.contacts__info_tel{
-  background-image: url("../img/icon-mobile.svg");
-}
-
-.contacts__info_loc{
-  background-image: url("../img/icon-location.svg");
+.contacts__icon{
+  fill: var(--third-color);
+  margin-right: .5rem;
 }

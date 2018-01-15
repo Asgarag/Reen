@@ -44,6 +44,18 @@
   color: var(--third-color);
   font-size: 1.5rem;
   font-weight: 700;
+
+  &:hover{
+    color: var(--second-color);
+  }
+
+  &:hover .about__icon{
+    fill: var(--second-color);
+  }
+}
+
+.about__icon{
+  fill: var(--third-color);
 }
 
 .about__grid{
@@ -80,7 +92,6 @@
 
 .about__contacts-info{
   color: var(--third-color);
-  display: block;
 
   &:not(:last-child){
     margin-bottom: 1rem;
@@ -116,7 +127,7 @@
   transform:translateY(-50%);
   text-transform: uppercase;
   padding: .8rem 1rem;
-  background-color: var(--fifth-color);
+  background-color: var(--forth-color);
   border-radius: .5rem;
   font-weight: 700;
   font-size: 1.3rem;

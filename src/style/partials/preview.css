@@ -74,7 +74,7 @@
   }
 
   .preview__inner{
-    min-height: 100vh;
+    min-height: 65rem;
   }
 }
 
@@ -198,12 +198,19 @@
 
 .preview__button{
   text-transform: uppercase;
-  padding: 2.5rem 6rem;
   background-color: var(--second-color);
   color: var(--white-color);
   font-size: 1.8rem;
   font-weight: 700;
   border-radius: .3rem;
+
+  &:hover{
+    background-color: var(--forth-color);
+  }
+
+  &:active{
+    transform: translateY(5px);
+  }
 }
 
 .preview__switch-prev, .preview__switch-next{
@@ -211,9 +218,22 @@
   transform: translateY(-50%);
   cursor: pointer;
   display: none;
-  padding: 1rem 1.9rem;
-  background-color: #7b95b0;
+  padding: 1rem 1.6rem .8rem;
+  background-color: var(--main-color);
+  opacity: .5;
   border-radius: 5%;
+
+  &:hover{
+    opacity: 1;
+  }
+
+  &:hover .preview__switch-icon{
+    fill: var(--forth-color);
+  }
+}
+
+.preview__switch-icon{
+  fill: var(--white-color);
 }
 
 .preview:hover .preview__switch-prev, .preview:hover .preview__switch-next, .preview:hover .preview__dots{
@@ -254,5 +274,5 @@
 }
 
 .preview__dot_active{
-  background-color: var(--fifth-color);
+  background-color: var(--forth-color);
 }

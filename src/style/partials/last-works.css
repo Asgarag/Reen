@@ -134,9 +134,24 @@
 
 .last-works__switch-prev, .last-works__switch-next{
   cursor: pointer;
-  padding: .8rem 1.2rem;
-  background-color: #7b95b0;
+  padding: .8rem 1rem .6rem;
+  background-color: var(--main-color);
   border-radius: 5%;
+  opacity: .5;
+
+  &:hover{
+    opacity: 1;
+  }
+
+  &:hover .last-works__switch-icon{
+    fill: var(--second-color);
+  }
+}
+
+.last-works__switch-icon{
+  fill: var(--white-color);
+  width: 8px;
+  height: 13px;
 }
 
 .last-works__dots{
@@ -160,5 +175,5 @@
 }
 
 .last-works__dot_active{
-  background-color: var(--fifth-color);
+  background-color: var(--forth-color);
 }

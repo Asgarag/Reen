@@ -26,7 +26,7 @@
   padding-bottom: .5rem;
 }
 
-.header-container{
+.header__container{
   padding: 4rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -34,10 +34,14 @@
   flex-wrap: wrap;
 }
 
-.header__contacts{
+.header__inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__contacts{
+  display: flex;
 }
 
 .header__contacts-info{
@@ -102,6 +106,10 @@
   color: var(--main-color);
   font-weight: 700;
   font-size: 1.5rem;
+
+  &:hover{
+    color: var(--second-color);
+  }
 }
 
 .header__form{
