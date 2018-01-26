@@ -1,9 +1,9 @@
 (function(){
-  var prev = document.getElementsByClassName('last-works__switch-prev');
-  var next = document.getElementsByClassName('last-works__switch-next');
-  var dots = document.getElementsByClassName('last-works__dot');
-  var slides = document.getElementsByClassName('last-works__slide');
-  var slideIndex = 1;
+  const prev = document.getElementsByClassName('last-works__switch-prev');
+  const next = document.getElementsByClassName('last-works__switch-next');
+  const dots = document.getElementsByClassName('last-works__dot-js');
+  const slides = document.getElementsByClassName('last-works__slide-js');
+  let slideIndex = 1;
   showSlides(slideIndex);
   prev[0].addEventListener("click", function(){
     showSlides(slideIndex += -1);
@@ -13,17 +13,11 @@
     showSlides(slideIndex += 1);
   });
 
-  dots[0].addEventListener("click", function(){
-    showSlides(slideIndex = 1);
-  });
-
-  dots[1].addEventListener("click", function(){
-    showSlides(slideIndex = 2);
-  });
-
-  dots[2].addEventListener("click", function(){
-    showSlides(slideIndex = 3);
-  });
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener("click", function(){
+      showSlides(slideIndex = i+1);
+    });
+  }
 
   function showSlides(n) {
     if (n > slides.length) {
@@ -34,15 +28,15 @@
       slideIndex = slides.length;
     };
 
-    for (var i = 0; i < slides.length; i++) {
-      slides[i].classList.remove('last-works__slide_active');
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove('last-works__slide-js_active');
     };
 
-    for (var i = 0; i < dots.length; i++) {
-      dots[i].classList.remove('last-works__dot_active');
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove('last-works__dot-js_active');
     };
 
-    slides[slideIndex-1].classList.add('last-works__slide_active');
-    dots[slideIndex-1].classList.add('last-works__dot_active');
+    slides[slideIndex-1].classList.add('last-works__slide-js_active');
+    dots[slideIndex-1].classList.add('last-works__dot-js_active');
   };
 })();

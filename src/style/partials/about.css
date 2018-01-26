@@ -98,9 +98,12 @@
   }
 }
 
+.about__form{
+  position: relative;
+}
+
 .about__label{
   display: block;
-  position: relative;
 }
 
 .about__input{

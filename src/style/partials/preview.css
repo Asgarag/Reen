@@ -100,7 +100,6 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   animation: fade 1.5s;
-  display: none;
 
   &:nth-child(1){
     background-image: url('../img/preview1.png');
@@ -123,7 +122,11 @@
   }
 }
 
-.preview__slide_active{
+.preview__slide-js{
+  display: none;
+}
+
+.preview__slide-js_active{
   display: block;
 }
 
@@ -262,7 +265,6 @@
 .preview__dot{
   height: 1.5rem;
   width: 1.5rem;
-  background-color: var(--main-color);
   display: inline-block;
   border-radius: 50%;
   cursor: pointer;
@@ -273,6 +275,10 @@
   }
 }
 
-.preview__dot_active{
+.preview__dot-js{
+  background-color: var(--main-color);
+}
+
+.preview__dot-js_active{
   background-color: var(--forth-color);
 }

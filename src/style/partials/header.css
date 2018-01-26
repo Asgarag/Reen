@@ -116,14 +116,11 @@
   width: 100%;
   margin-top: 2rem;
   display: none;
+  position: relative;
 }
 
 .header__form_active{
   display: block;
-}
-
-.header__label{
-  position: relative;
 }
 
 .header__input{

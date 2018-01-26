@@ -46,7 +46,6 @@ gulp.task('html:build', function () {
 gulp.task('js:build', function () {
     gulp.src(path.src.js)
         .pipe(rigger())
-		.pipe(uglify())
         .pipe(sourcemaps.init())
         .pipe(sourcemaps.write()) 
         .pipe(gulp.dest(path.build.js))

@@ -1,17 +1,17 @@
 @media screen and (width >= 1024px){
 
-  .page__sidebar-menu{
+  .page__sidebar-menu-js{
     display: none;
   }
 }
 
 @media screen and (width < 1024px) and (width >= 768px){
 
-  .page__sidebar-menu{
+  .page__sidebar-menu-js{
     left: 0;
   }
 
-  .page__sidebar-menu_active{
+  .page__sidebar-menu-js_active{
     left: 240px;
   }
 
@@ -27,11 +27,11 @@
 
 @media screen and (width < 768px){
 
-  .page__sidebar-menu{
+  .page__sidebar-menu-js{
     left: 0;
   }
 
-  .page__sidebar-menu_active{
+  .page__sidebar-menu-js_active{
     left: 100vw;
   }
 
