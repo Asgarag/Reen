@@ -101,6 +101,18 @@
     padding-top: 68%;
     background-color: var(--second-color);
   }
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:hover .last-works__img-description{
+    display: block;
+  }
+
+  &:hover .last-works__thumbnail{
+    opacity: .2;
+  }
 }
 
 .last-works__slider{
@@ -121,6 +133,25 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.last-works__img-description{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.last-works__img-name{
+  font-size: 16px;
+  margin-bottom: .5rem;
+}
+
+.last-works__img-author{
+  font-size: 14px;
 }
 
 .last-works__switches{

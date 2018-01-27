@@ -1,6 +1,9 @@
 .project{
   margin: 0;
   background-color: var(--white-color);
+}
+
+.project__wrapper{
   position: relative;
 
   &::before{
@@ -10,6 +13,26 @@
     padding-top: 68%;
     background-color: var(--second-color);
   }
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:hover .project__icon{
+    display: block;
+  }
+
+  &:hover .project__img{
+    opacity: .2;
+  }
+}
+
+.project__icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
 .project__img{
@@ -26,4 +49,8 @@
 .project__name{
   font-size: 2rem;
   margin-bottom: 1.8rem;
+
+  &:hover{
+    color: var(--forth-color);
+  }
 }

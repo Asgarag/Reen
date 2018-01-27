@@ -82,6 +82,18 @@
     padding-top: 68%;
     background-color: var(--second-color);
   }
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:hover .about__icon{
+    display: block;
+  }
+
+  &:hover .about__img{
+    opacity: .2;
+  }
 }
 
 .about__img{
@@ -130,9 +142,21 @@
   transform:translateY(-50%);
   text-transform: uppercase;
   padding: .8rem 1rem;
-  background-color: var(--forth-color);
+  background-color: var(--second-color);
   border-radius: .5rem;
   font-weight: 700;
   font-size: 1.3rem;
   color: var(--white-color);
+
+  &:hover{
+    background-color: var(--forth-color);
+  }
+}
+
+.about__icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
