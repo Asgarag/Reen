@@ -53,11 +53,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .footer__menu-link{
   color: var(--gray-color);
+
+  &:hover{
+    color: var(--second-color);
+  }
 }
 
 .footer__menu-list-item:not(:last-child)::after{

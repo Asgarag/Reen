@@ -5,6 +5,7 @@
 
 .project__wrapper{
   position: relative;
+  display: block;
 
   &::before{
     content: "";
@@ -12,10 +13,6 @@
     padding-left: 100%;
     padding-top: 68%;
     background-color: var(--second-color);
-  }
-
-  &:hover{
-    cursor: pointer;
   }
 
   &:hover .project__icon{
@@ -49,6 +46,11 @@
 .project__name{
   font-size: 2rem;
   margin-bottom: 1.8rem;
+}
+
+.project__name-link{
+  text-decoration: none;
+  color: var(--main-color);
 
   &:hover{
     color: var(--forth-color);

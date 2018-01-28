@@ -83,11 +83,7 @@
     background-color: var(--second-color);
   }
 
-  &:hover{
-    cursor: pointer;
-  }
-
-  &:hover .about__icon{
+  &:hover .about__icon-img{
     display: block;
   }
 
@@ -153,7 +149,7 @@
   }
 }
 
-.about__icon{
+.about__icon-img{
   position: absolute;
   top: 50%;
   left: 50%;

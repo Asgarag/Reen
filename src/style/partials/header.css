@@ -4,10 +4,6 @@
     margin-right: 8rem;
   }
 
-  .header__switches{
-    margin-left: 22.5rem;
-  }
-
   .header__menu-button{
     display: none;
   }
@@ -30,8 +26,6 @@
 
 .header__wrapper{
   background-color: #f5f7fa;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
 }
 
 .header__container{
@@ -75,7 +69,7 @@
   padding: 0;
 }
 
-.header__search-button_disable{
+.header__search-button-js_disable{
   display: none;
 }
 
@@ -102,7 +96,6 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .header__menu-link{
@@ -110,6 +103,8 @@
   color: var(--main-color);
   font-weight: 700;
   font-size: 1.5rem;
+  padding: 2rem 3rem;
+  display: block;
 
   &:hover{
     color: var(--second-color);
@@ -123,7 +118,7 @@
   position: relative;
 }
 
-.header__form_active{
+.header__form-js_active{
   display: block;
 }
 
@@ -159,7 +154,7 @@
   display: none;
 }
 
-.header__search-button-cross_active{
+.header__search-button-cross-js_active{
   display: block;
 }
 

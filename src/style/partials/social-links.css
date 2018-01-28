@@ -3,7 +3,7 @@
 }
 
 .social-links__link{
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   text-indent: -9999px;
   width: 13px;
   height: 13px;
@@ -14,24 +14,54 @@
 
 .social-links__link_fb{
   background-image: url("../img/icon-s-facebook.svg");
+
+  &:hover{
+    background-color: #4668b3;
+    background-image: url("../img/icon-s-facebook-hover.svg");
+  }
 }
 
 .social-links__link_g{
   background-image: url("../img/icon-s-gplus.svg");
+
+  &:hover{
+    background-color: #de5745;
+    background-image: url("../img/icon-s-gplus-hover.svg");
+  }
 }
 
 .social-links__link_tw{
   background-image: url("../img/icon-s-twitter.svg");
+
+  &:hover{
+    background-color: #2fbbed;
+    background-image: url("../img/icon-s-twitter-hover.svg");
+  }
 }
 
 .social-links__link_pr{
   background-image: url("../img/icon-s-pinterest.svg");
+
+  &:hover{
+    background-color: #d94348;
+    background-image: url("../img/icon-s-pinterest-hover.svg");
+  }
 }
 
 .social-links__link_bh{
   background-image: url("../img/icon-s-behance.svg");
+
+  &:hover{
+    background-color: #3079ff;
+    background-image: url("../img/icon-s-behance-hover.svg");
+  }
 }
 
 .social-links__link_dr{
   background-image: url("../img/icon-s-dribbble.svg");
+
+  &:hover{
+    background-color: #eb6397;
+    background-image: url("../img/icon-s-dribbble-hover.svg");
+  }
 }
