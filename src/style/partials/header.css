@@ -103,11 +103,13 @@
   color: var(--main-color);
   font-weight: 700;
   font-size: 1.5rem;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   display: block;
+  border-radius: 5%;
 
   &:hover{
     color: var(--second-color);
+    background-color: #f5f7fa;
   }
 }
 
@@ -129,6 +131,8 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-right: 1.5rem;
+  appearance: none;
+  border-radius: 0;
 }
 
 .header__form-button{
